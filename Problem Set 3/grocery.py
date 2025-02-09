@@ -7,9 +7,9 @@ def main():
         else:
             groceryList = appendItem(item, groceryList)
     
-    groceryList = sorted(groceryList)
-    print(groceryList)
-
+    sortedGroceryList = dict(sorted(groceryList.items()))
+    for key, value in sortedGroceryList.items():
+        print(f"{value}: {key}")
         
 
             
